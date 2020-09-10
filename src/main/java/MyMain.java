@@ -18,17 +18,20 @@ public class MyMain {
         int ab_b = Math.abs(b);
         if (Math.max(ab_a, ab_b) == ab_a) {
             System.out.println(a);
+            return a;
         }
         else {
             System.out.println(b);
+            return b;
         }
-        return ab_a;
+        
     }
 
-    public static int pythagoras(int a, int b) {
+    public static double pythagoras(int a, int b) {
         int c_sq = (int) (Math.pow((a+b),2) - 2*a*b);
         System.out.println(Math.sqrt(c_sq));
-        return c_sq;
+        
+        return Math.sqrt(c_sq);
     }
 
     public static void main(String[] arg){
